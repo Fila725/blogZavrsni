@@ -29,7 +29,7 @@
 }
 
 
-/* GENERAL CLASSES */
+/* ===================  GENERAL CLASSES ===================  */
 
 
 * {
@@ -46,7 +46,7 @@
 body {
    font-family: "Montserrat", sans-serif;
    line-height: 1.6; 
-   color: var(--color-gray-900);
+   color: var(--color-gray-200);
    overflow-x: hidden;
    background: var(--color-bg); 
    font-size: 0.9rem; 
@@ -98,7 +98,7 @@ img {
   object-fit: cover;
 }
 
-/* Navigation */
+/* ===================  NAVIGATION (HEADER) ===================  */
 
 nav {
   background: var(--color-primary);
@@ -114,3 +114,134 @@ nav {
     display: none;
 
  }
+
+ .nav__container {
+   height: 100%;
+   display: flex;
+   align-items: center;
+  justify-content: space-between;
+ }
+
+ .avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 0.3rem solid var(--color-bg);
+ }
+
+
+ .nav__logo {
+  font-weight: 600;
+  font-size: 1.2rem;
+ }
+
+ .nav_items {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+ }
+
+.nav__profile {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav__profile ul {
+  position: absolute;
+  top: 125%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--tranistion);
+}
+
+/* show avatar ul when profile is hovered */
+.nav__profile:hover > ul {
+  visibility: visible;
+  opacity: 1  ;
+}
+
+.nav__profile ul li a {
+  padding: 1rem;
+  background: var(--color-gray-900);
+  display: block;
+  width: 100%;
+}
+.nav__profile ul li:last-child a {
+  background: var(--color-red);
+  color: var(--color-bg);
+}
+
+/* ===================  END OF NAVIGATION (HEADER) ===================  */
+
+
+/* ===================  CATEGORY BUTTON ===================  */
+
+
+.category__button {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: var(--card-border-radius-2);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.category__button:hover {
+  color: var(--color-white);
+
+}
+
+
+/* ===================  END OF CATEGORY BUTTON ===================  */
+
+/* ===================  GENERAL POST ===================  */
+.post__thumbnail {
+   border-radius: var(--card-border-radius-5) 0;
+   border: 1rem solid var(--color-gray-900); 
+   overflow: hidden;
+   margin-bottom: 1.6rem;
+}
+
+.post:hover .post__thumbnail img {
+  filter: saturate(0);
+  transition: filter 500ms ease;
+}
+
+.post__author {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.post__author-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--card-border-radius-2); 
+  overflow: hidden;
+}
+/* =================== END OF GENERAL POST  ===================  */
+
+/* =================== FEATURED POST  ===================  */
+
+.featured {
+  margin-top: 8rem;
+}
+
+.featured__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.featured .post__thumbnail {
+    height: fit-content;
+}
+
+/* =================== END OF FEATURED POST ===================  */
