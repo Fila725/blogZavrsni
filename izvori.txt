@@ -1,0 +1,24 @@
+Izvori: 
+
+
+
+**** FRONTEND ****
+Inspiracija i tutorijali: 
+EGATOR Youtube kanal
+https://www.youtube.com/@EGATORTUTORIALS
+
+HTML i CSS course:
+SuperSimpleDev youtube video:
+https://www.youtube.com/watch?v=G3e-cpL7ofc&t
+
+
+**** BACKEND POMOĆ ****
+ChatGPT 5.2 Model
+- PDO pristup bazi podataka
+- Dohvaćanje podataka iz baze za dinamički prikaz
+- Dummy kontent
+
+w3schools
+https://www.w3schools.com/php/
+
+
