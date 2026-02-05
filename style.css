@@ -931,7 +931,7 @@ input,textarea,select {
 
   /* prevent any tiny accidental sideways scroll */
   html, body {
-    overflow-x: hidden;
+   /* overflow-x: hidden; */
   }
 
   /* thumbnails: reduce border + radius so image isn't visually "missing" */

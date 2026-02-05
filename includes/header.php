@@ -15,6 +15,9 @@ require_once __DIR__ . "/functions.php";
     <link rel="stylesheet" href="/blog/style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- JS FILE (defer ensures HTML loads first) -->
+    <script src="/blog/main.js" defer></script>
 </head>
 <body>
 
@@ -31,7 +34,7 @@ require_once __DIR__ . "/functions.php";
             <?php if (!empty($_SESSION['user'])): ?>
                 <li class="nav__profile">
                     <div class="avatar">
-                        <img src="/blog/images/avatar1.jpg">
+                        <img src="/blog/images/avatar1.jpg" alt="Profile Avatar">
                     </div>
                     <ul>
                         <li><a href="/blog/admin/dashboard.php">Dashboard</a></li>
@@ -43,7 +46,12 @@ require_once __DIR__ . "/functions.php";
             <?php endif; ?>
         </ul>
 
-        <button id="open__nav-btn"><i class="uil uil-bars"></i></button>
-        <button id="close__nav-btn"><i class="uil uil-multiply"></i></button>
+        <button id="open__nav-btn" aria-label="Open Menu">
+            <i class="uil uil-bars"></i>
+        </button>
+
+        <button id="close__nav-btn" aria-label="Close Menu">
+            <i class="uil uil-multiply"></i>
+        </button>
     </div>
 </nav>
