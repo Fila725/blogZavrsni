@@ -5,17 +5,37 @@ require __DIR__ . "/includes/header.php";
 
 <section class="empty__page">
     <div class="container">
-        <h2>Services</h2>
-        <p>
-    We provide the latest news and updates from around the world. Our website focuses on publishing fresh and trending stories across different categories including politics, sports, entertainment, technology, and business.
-</p>
-
+        <h2>Sources</h2>
+    
 <p>
-    Our goal is to keep readers informed with accurate and easy-to-understand articles. We regularly post new content so visitors can stay updated on what’s happening anytime.
-</p>
+    Izvori: 
+    <br>
+**** FRONTEND ****
+ <br>
+Inspiracija i tutorijali: 
+ <br>
+EGATOR Youtube kanal
+ <br>
+<a href="https://www.youtube.com/@EGATORTUTORIALS">https://www.youtube.com/@EGATORTUTORIALS</a>
+<br>
 
-<p>
-    From breaking news to popular headlines, we are committed to sharing information that matters.
+**** BACKEND POMOĆ ****
+ <br>
+ChatGPT 5.2 Model
+ <br>
+- PDO pristup bazi podataka
+ <br>
+- Dohvaćanje podataka iz baze za dinamički prikaz
+ <br>
+- Dummy kontent
+ <br>
+
+w3schools
+ <br>
+<a href="https://www.w3schools.com">Visit W3Schools</a>
+
+
+
 </p>
     </div>
 </section>

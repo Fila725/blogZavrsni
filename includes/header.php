@@ -28,7 +28,7 @@ require_once __DIR__ . "/functions.php";
         <ul class="nav__items">
             <li><a href="/blog/blog.php">Blog</a></li>
             <li><a href="/blog/about.php">About</a></li>
-            <li><a href="/blog/services.php">Services</a></li>
+            <li><a href="/blog/services.php">Sources</a></li>
             <li><a href="/blog/contact.php">Contact</a></li>
 
             <?php if (!empty($_SESSION['user'])): ?>
